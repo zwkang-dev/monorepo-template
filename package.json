@@ -42,7 +42,7 @@
     "dev": "pnpm -r --filter=./packages/** run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "vitest run",
+    "test": "pnpm -r --filter=./packages/** run test",
     "build": "pnpm -r --filter=./packages/** run build",
     "start": "pnpm -r --filter=./packages/** run start",
     "release": "bumpp -r --all",
