@@ -1,6 +1,6 @@
 {
   "name": "@zwkang-dev/test-monorepo-shared",
-  "version": "0.0.1-beta.11",
+  "version": "0.0.1-beta.12",
   "packageManager": "pnpm@7.9.0",
   "description": "> description:",
   "publishConfig": {
