@@ -1,1 +1,1 @@
-export { default } from '../../tsup.config';
+export { default } from '../../tsup.config'

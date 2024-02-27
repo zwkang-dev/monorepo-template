@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "esnext",
     "lib": [
       "esnext",
       "DOM"
     ],
+    "baseUrl": ".",
+    "module": "esnext",
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
-    "allowJs": true,
-    "noEmit": true,
-    "strictNullChecks": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": "."
+    "skipLibCheck": true
   },
   "include": [
     "./*.ts",

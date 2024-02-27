@@ -10,6 +10,7 @@
     "name": "zwkang",
     "email": "kang95630@gmail.com"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zwkang/pkg-name.git"
@@ -20,8 +21,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "main": "./dist/index.js",
@@ -61,6 +62,5 @@
     "typescript": "^5.3.2",
     "vitest": "^0.34.6",
     "zwkang-prettier-config": "^0.0.3"
-  },
-  "license": "MIT"
+  }
 }

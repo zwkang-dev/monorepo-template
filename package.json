@@ -9,6 +9,7 @@
     "name": "zwkang",
     "email": "kang95630@gmail.com"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zwkang/monorepo-template.git"
@@ -19,8 +20,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "main": "./dist/index.js",
@@ -40,6 +41,7 @@
   "scripts": {
     "dev": "pnpm -r --filter=./packages/** run build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest run",
     "build": "pnpm -r --filter=./packages/** run build",
     "start": "pnpm -r --filter=./packages/** run start",
@@ -50,6 +52,7 @@
     "publish:all": "pnpm -r publish --access public --no-git-checks"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.6.4",
     "bumpp": "^9.2.0",
     "eslint": "^8.57.0",
     "prettier": "^3.1.0",
@@ -57,8 +60,6 @@
     "tsx": "^4.5.0",
     "typescript": "^5.3.2",
     "vitest": "^0.34.6",
-    "zwkang-prettier-config": "^0.0.3",
-    "@antfu/eslint-config": "^2.6.4"
-  },
-  "license": "MIT"
+    "zwkang-prettier-config": "^0.0.3"
+  }
 }
