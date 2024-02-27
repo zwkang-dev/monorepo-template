@@ -32,6 +32,8 @@ jobs:
 
       - name: Release
         run: pnpm publish:all
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - run: npx changelogithub
         env:
