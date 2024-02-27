@@ -27,16 +27,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
-      - name: Release
+      - name: Release NPM Package
         run: pnpm publish:all
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: pnpm config set '//npm.pkg.github.com/:_authToken' "${{ secrets.GITHUB_TOKEN }}"
-      - name: Release Github
-        run: pnpm publish:all
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
+          NPM_CONFIG_PROVENANCE: true
       - run: npx changelogithub
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
